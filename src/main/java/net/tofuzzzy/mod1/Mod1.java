@@ -18,6 +18,7 @@ import org.slf4j.Logger;
 import java.util.stream.Collectors;
 
 // The value here should match an entry in the META-INF/mods.toml file
+// test comment. End me
 @Mod(Mod1.MOD_ID)
 public class Mod1 {
     public static final String MOD_ID = "mod1";

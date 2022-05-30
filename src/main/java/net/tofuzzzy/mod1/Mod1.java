@@ -28,6 +28,8 @@ public class Mod1 {
         eventBus.addListener(this::setup);
 
         MinecraftForge.EVENT_BUS.register(itemheld.class);
+        MinecraftForge.EVENT_BUS.register(Woosh.class);
+        MinecraftForge.EVENT_BUS.register(onKeyPress.class);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

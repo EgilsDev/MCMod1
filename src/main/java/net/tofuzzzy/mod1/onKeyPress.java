@@ -8,6 +8,7 @@ import java.io.IOException;
 
 import static com.mojang.blaze3d.platform.InputConstants.KEY_Q;
 
+//All of this is experimental and for testing
 public class onKeyPress {
     private Object mc;
 

@@ -18,5 +18,17 @@ public class itemheld {
         clicks = clicks + 1;
         System.out.println(clicks);
 
+
+
+    }
+
+    @SubscribeEvent
+    public static void head(PlayerInteractEvent event) {
+
+        Player player = event.getPlayer();
+
+        String head = String.valueOf(event.getPlayer().verticalCollision);
+
+
     }
 }

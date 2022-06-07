@@ -7,19 +7,20 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.tofuzzzy.mod1.Items.Storage.ModItems;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
 
 // test comment. End me
 
-@Mod(Mod1.MOD_ID)
-public class Mod1 {
+@Mod(mod1.MOD_ID)
+public class mod1 {
     public static final String MOD_ID = "mod1";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public Mod1()
+    public mod1()
     {
         // Register the setup method for modloading
         //FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
@@ -30,6 +31,8 @@ public class Mod1 {
         MinecraftForge.EVENT_BUS.register(itemheld.class);
         MinecraftForge.EVENT_BUS.register(Woosh.class);
         MinecraftForge.EVENT_BUS.register(onKeyPress.class);
+
+        ModItems.register(eventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

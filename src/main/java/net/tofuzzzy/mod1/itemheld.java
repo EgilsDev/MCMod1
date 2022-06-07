@@ -15,10 +15,8 @@ public class itemheld {
         String iteminhand = String.valueOf(event.getPlayer().getMainHandItem().getItem());
         System.out.println(iteminhand);
 
-        clicks = clicks + 1;
-        System.out.println(clicks);
-
-
+       String head = String.valueOf(event.getPlayer().verticalCollision);
+       System.out.println(head);
 
     }
 
@@ -28,6 +26,7 @@ public class itemheld {
         Player player = event.getPlayer();
 
         String head = String.valueOf(event.getPlayer().verticalCollision);
+        System.out.println(head);
 
 
     }
